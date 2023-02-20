@@ -13,7 +13,7 @@ class DiaryEntry
   end
 
   def count_word
-    0
+    return 0
   end
 
 end
