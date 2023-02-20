@@ -12,5 +12,8 @@ class DiaryEntry
     return @contents
   end
 
+  def count_word
+    0
+  end
 
 end
