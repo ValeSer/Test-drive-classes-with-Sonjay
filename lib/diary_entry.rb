@@ -1,4 +1,5 @@
 class DiaryEntry
+  class DiaryEntry
   def initialize(title, contents)
     @title = title
     @contents = contents
@@ -12,8 +13,8 @@ class DiaryEntry
     return @contents
   end
 
-  def count_words
-    return @contents.split(" ").length
+  def count_word
+    return 0
   end
 
 end
