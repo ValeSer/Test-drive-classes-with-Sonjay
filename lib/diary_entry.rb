@@ -12,8 +12,8 @@ class DiaryEntry
     return @contents
   end
 
-  def count_word
-    return 0
+  def count_words
+    return @contents.split(" ").length
   end
 
 end

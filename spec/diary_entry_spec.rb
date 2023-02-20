@@ -9,11 +9,17 @@ describe DiaryEntry do
   describe '#count_word' do
     it 'returns 0 if no words' do
       diary_entry = DiaryEntry.new("my_title", "")
-      expect(diary_entry.count_word).to eq 0
+      expect(diary_entry.count_words).to eq 0
+    end
+
+    it 'returns 1 if there is word' do
+      diary_entry = DiaryEntry.new("my_title", "Hello ")
+      expect(diary_entry.count_words).to eq 1
     end
 
     
   end
+ 
 
 
 
