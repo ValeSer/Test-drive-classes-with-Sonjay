@@ -23,9 +23,11 @@ describe DiaryEntry do
       diary_entry = DiaryEntry.new("my_title", "Hello " * 550)
       expect(diary_entry.reading_time(200)).to eq 3
     end
-
+    
+    it 'fails if wpm is 0 ' do
+      diary_entry = DiaryEntry.new("my_title", "one" * 3)
+      expect { diary_entry.reading_time(0)}.to raise_error "reading cannot be 0"
+    end
   end
-
-
 
 end
